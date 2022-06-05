@@ -3,9 +3,9 @@
 namespace Armincms\IdPay;
 
 use Illuminate\Contracts\Support\DeferrableProvider; 
-use Illuminate\Support\ServiceProvider; 
+use Illuminate\Support\ServiceProvider as LaravelServiceProvider; 
 
-class ServiceProvider extends ServiceProvider implements DeferrableProvider
+class ServiceProvider extends LaravelServiceProvider implements DeferrableProvider
 {   
     /**
      * Register any application services.
